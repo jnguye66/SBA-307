@@ -18,6 +18,15 @@ body {
     margin: 10px;
 }
 
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #1b1d1f;
+    margin: 1em 0;
+    padding: 0;
+}
+
 /* /////////////////////////////////////////////////////////////////////////////// */
 
 /* Top Nav Bar */
@@ -94,6 +103,7 @@ body {
     display: table;
     list-style: none;
     padding-left: 0;
+    margin-top: -20px;
 }
 
 .gen-list ul>li {
@@ -121,7 +131,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #lvl-1-stats {
