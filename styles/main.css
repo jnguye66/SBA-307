@@ -1,15 +1,15 @@
 /* /////////////////////////////////////////////////////////////////////////////// */
 
 /* Overall formatting */
-html,body
-{
+html,
+body {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
-    color: peachpuff;
+    overflow-x: hidden;
     background-color: #12121d;
+    color: peachpuff;
 }
 
 /* Main Container */
@@ -19,13 +19,97 @@ html,body
 }
 
 /* /////////////////////////////////////////////////////////////////////////////// */
-/* Splash Art */
 
-.ppf {
+/* Top Nav Bar */
+
+#navbar {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50vw;
+    width: 100vw;
+    position: relative;
+}
+
+#navbar h1 {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+/* Dropdown Menu */
+
+.drop-button {
+    background-color: #1f1f31;
+    color: peachpuff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-items {
+    display: none;
+    position: absolute;
+    background-color: #31314b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-items a {
+    color: peachpuff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-items a:hover {
+    background-color: #41414d;
+}
+
+.dropdown-menu:hover .dropdown-items {
+    display: block;
+}
+
+.dropdown-menu:hover .drop-button {
+    background-color: #31314b;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* General Information */
+
+.gen-info {
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: large;
+    text-align: left;
+}
+
+.gen-list {
+    display: table;
+    list-style: none;
+    padding-left: 0;
+}
+
+.gen-list ul>li {
+    display: table-row;
+}
+
+.gen-list ul>li>* {
+    display: table-cell;
+    padding: 5px;
+}
+
+.gen-list ul label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.gen-list ul label:after {
+    content: ':';
 }
 
 /* /////////////////////////////////////////////////////////////////////////////// */
@@ -35,6 +119,7 @@ html,body
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    border: 1px solid black;
 }
 
 #lvl-1-stats {
@@ -71,12 +156,12 @@ html,body
 }
 
 /* Put every list element into rows */
-.info tr > td {
+.info tr>td {
     display: table-row;
 }
 
 /* Make each row into cells with padding */
-.info tr > td > * {
+.info tr>td>* {
     display: table-cell;
     padding: 5px;
 }
@@ -84,11 +169,12 @@ html,body
 /* Bold and left align all label elements */
 .info table label {
     font-weight: bold;
+    font-size: large;
     text-align: left;
 }
 
 /* Give a colon after each label element */
-.info table label:after{
+.info table label:after {
     content: ':';
 }
 
