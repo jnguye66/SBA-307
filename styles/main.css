@@ -1,0 +1,79 @@
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* Main Container */
+
+#main-container {
+    padding: 20px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* Splash Art */
+
+.ppf {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* Stat Tables Layout */
+
+#stat-comparisons {
+    display: flex;
+    margin: auto;
+}
+
+/* #lvl-1-stats {
+    width: 30%;
+}
+
+#lvl-80-stats {
+    width: 30%;
+} */
+
+#lvl-1-stats tr.break {
+    padding-bottom: 50px;
+}
+
+#lvl-80-stats tr.break {
+    padding-bottom: 50px;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* Formatting for Stats */
+
+.info {
+    border: 1px solid black;
+    width: 50vw;
+}
+
+/* Make list of info a table */
+.info tr {
+    display: table;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Put every list element into rows */
+.info tr > td {
+    display: table-row;
+}
+
+/* Make each row into cells with padding */
+.info tr > td > * {
+    display: table-cell;
+    padding: 5px;
+}
+
+/* Bold and left align all label elements */
+.info table label {
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Give a colon after each label element */
+.info table label:after{
+    content: ':';
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
