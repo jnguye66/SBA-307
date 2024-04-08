@@ -8,6 +8,8 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    color: peachpuff;
+    background-color: #12121d;
 }
 
 /* Main Container */
@@ -31,14 +33,18 @@ html,body
 
 #stat-comparisons {
     display: flex;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 #lvl-1-stats {
     padding-left: 10px;
+    text-align: center;
 }
 
 #lvl-80-stats {
     padding-right: 10px;
+    text-align: center;
 }
 
 #lvl-1-stats tr.break {
