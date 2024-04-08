@@ -30,6 +30,8 @@ body {
 
 #navbar h1 {
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
     position: absolute;
     left: 0;
     right: 0;
