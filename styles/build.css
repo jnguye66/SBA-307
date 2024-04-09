@@ -123,11 +123,19 @@ hr {
     /* border: 1px solid white; */
 }
 
+#build-showcase img{
+    transition: transform .2s;
+}
+
+#build-showcase img:hover{
+    transform: scale(1.1);
+}
+
 .gear-container {
-    transition-property: width, height;
+    transition: transform .2s;
 }
 .gear-container:hover {
-    scale: 2;
+    transform: scale(2);
     z-index: 100;
 }
 
