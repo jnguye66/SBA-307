@@ -1,0 +1,101 @@
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+/* Overall formatting */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #12121d;
+    color: peachpuff;
+}
+
+/* Main Container */
+
+#main-container {
+    margin: 10px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #1b1d1f;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+/* Top Nav Bar */
+
+#navbar {
+    display: block;
+    width: 100vw;
+    position: relative;
+}
+
+#navbar h1, h2 {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+#navbar h2 {
+    padding-top: 38px;
+}
+
+/* Dropdown Menu */
+
+.drop-button {
+    background-color: #1f1f31;
+    color: peachpuff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-items {
+    display: none;
+    position: absolute;
+    background-color: #31314b;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-items a {
+    color: peachpuff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-items a:hover {
+    background-color: #41414d;
+}
+
+.dropdown-menu:hover .dropdown-items {
+    display: block;
+}
+
+.dropdown-menu:hover .drop-button {
+    background-color: #31314b;
+}
+
+#skill-demo img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
